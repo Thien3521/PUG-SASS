@@ -1,0 +1,17 @@
+header.header
+    .container
+        .row
+            .header__logo
+                h1
+                    a= header_logo
+            label.header__menu(for="navbar_toggler") 
+                i.fa.fa-bars  
+            input#navbar_toggler(type="checkbox")
+            .header__nav
+                ul
+                    each val in nav_menu
+                        li
+                            a(href= val.link)= val.title
+                .clear-left
+            .header__btn
+                a(href="#", class="btn btn-primary")= header_btn_content

@@ -1,0 +1,263 @@
+include ./mixin.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Hello World
+        link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet" href="./css/style.css")
+    body
+        include ./header.pug
+        //- header.header
+        //-     .container
+        //-         .row
+        //-             .header__logo
+        //-                 h1
+        //-                     a Web35Pro
+        //-             label.header__menu(for='navbar_toggler')
+        //-                 i.fa.fa-bars  
+        //-             input#navbar_toggler(type='checkbox')
+        //-             .header__nav
+        //-                 ul
+        //-                     li
+        //-                         a(href='#') Home
+        //-                     li
+        //-                         a(href='#about') About
+        //-                     li
+        //-                         a(href='#service') Services
+        //-                     li
+        //-                         a(href='#contact') Contact
+        //-                 .clear-left
+        //-             .header__btn
+        //-                 a.btn.btn-primary(href='#') Get Free
+        //
+        include ./slider.pug
+        //- section.slider
+            input#slider_1(type='radio', name='slider_radio')
+            input#slider_2(type='radio', name='slider_radio')
+            input#slider_3(type='radio', name='slider_radio')
+            .slider__content
+                .slider__item
+                    .container
+                        .slider__text
+                            p Stylish designs
+                            h5 Interiors that reflect your style.
+                            a(href='#')
+                                | View Details 
+                                i.fa.fa-long-arrow-alt-right
+                .slider__item
+                    .container
+                        .slider__text
+                            p Home decoration
+                            h5 Interior designs from the future.
+                            a(href='#')
+                                | View Details 
+                                i.fa.fa-long-arrow-alt-right
+                .slider__item
+                    .container
+                        .slider__text
+                            p Home decoration
+                            h5 Interior designs from the future.
+                            a(href='#')
+                                | View Details 
+                                i.fa.fa-long-arrow-alt-right
+            .slider__nav
+                label(for='slider_1')
+                label(for='slider_2')
+                label(for='slider_3')
+        //
+        include ./about.pug
+        //- section#about.about
+        //-     .container
+        //-         .row
+        //-             .about__item
+        //-                 h6.sub-title ABOUT US
+        //-                 h3.big-title One-Stop Shop For Everything Interiors
+        //-                 p
+        //-                 a(href='#')
+        //-                     | Read More
+        //-                     i.fa.fa-arrow-right
+        //-             .about__item
+        //-                 .row
+        //-                     .about__img
+        //-                         img(src='./css/img/ab.jpg', alt='about image 1')
+        //-                     .about__img
+        //-                         img(src='./css/img/ab1.jpg', alt='about image 2')
+        //- 
+        include ./offer.pug
+        //- section#service.offer
+        //-     .container
+        //-         .row
+        //-             .offer__item
+        //-                 img(src='./css/img/g3.jpg', alt='')
+        //-             .offer__item
+        //-                 h6.sub-title WHAT WE DO
+        //-                 h3.big-title What We Offer For You
+        //-                 p
+        //-                     | Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
+        //-                     | labore et dolore magna aliqua.
+        //-                 ul
+        //-                     li
+        //-                         i.fa.fa-check
+        //-                         | Full home interiors
+        //-                     li
+        //-                         i.fa.fa-check
+        //-                         | Modular solutions
+        //-                     li
+        //-                         i.fa.fa-check
+        //-                         | Catalogue products
+        //-                     li
+        //-                         i.fa.fa-check
+        //-                         | Installation
+        //- 
+        include ./contact.pug
+        //- section#contact.contact
+        //-     .container
+        //-         .contact__content
+        //-             .row
+        //-                 h3.big-title Meet Our Designer Online
+        //-                 h4 Start your home interiors journey online, from the comfort of your home
+        //-                 form(action='#', method='post')
+        //-                     .row.contact__form
+        //-                         .contact__form-item
+        //-                             input(type='text', placeholder='Name...')
+        //-                         .contact__form-item
+        //-                             input(type='email', placeholder='Email...')
+        //-                         .contact__form-item
+        //-                             button.btn.btn-primary(type='submit') Submit
+        //-                 p
+        //-                     | By submitting this form, you agree to the 
+        //-                     a(href='#') privacy policy 
+        //-                     | and 
+        //-                     a(href='#')
+        //-                         | terms of
+        //-                         | use
+        //- 
+        include ./comment.pug
+        //- section.comment
+        //-     .container
+        //-         h6.sub-title HERE&rsquo;S WHAT THEY HAVE TO SAY
+        //-         h3.big-title Our Clients Do The Talking
+        //-         p
+        //-         input#comment_1(type='radio', name='comment_radio')
+        //-         input#comment_2(type='radio', name='comment_radio')
+        //-         input#comment_3(type='radio', name='comment_radio')
+        //-         input#comment_4(type='radio', name='comment_radio')
+        //-         .comment__wraper
+        //-             .comment__item
+        //-                 blockquote.comment__content
+        //-                     i.fa.fa-quote-left
+        //-                     p
+        //-                         | Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate
+        //-                         | rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet
+        //-                         | adipisicing elit. Laborum dolor facere ipsum adipisicingelit.
+        //-                 .comment__user
+        //-                     img(src='./css/img/c1.jpg', alt='user1')
+        //-                     h4 Admin
+        //-             .comment__item
+        //-                 blockquote.comment__content
+        //-                     i.fa.fa-quote-left
+        //-                     p
+        //-                         | Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate
+        //-                         | rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet
+        //-                         | adipisicing elit. Laborum dolor facere ipsum adipisicingelit.
+        //-                 .comment__user
+        //-                     img(src='./css/img/c2.jpg', alt='user2')
+        //-                     h4 Admin
+        //-             .comment__item
+        //-                 blockquote.comment__content
+        //-                     i.fa.fa-quote-left
+        //-                     p
+        //-                         | Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate
+        //-                         | rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet
+        //-                         | adipisicing elit. Laborum dolor facere ipsum adipisicingelit.
+        //-                 .comment__user
+        //-                     img(src='./css/img/c3.jpg', alt='user3')
+        //-                     h4 Admin
+        //-             .comment__item
+        //-                 blockquote.comment__content
+        //-                     i.fa.fa-quote-left
+        //-                     p
+        //-                         | Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate
+        //-                         | rem ullam dolore nisi voluptatibus esse quasi. Integer sit amet .Lorem ipsum dolor sit amet
+        //-                         | adipisicing elit. Laborum dolor facere ipsum adipisicingelit.
+        //-                 .comment__user
+        //-                     img(src='./css/img/c4.jpg', alt='user4')
+        //-                     h4 Admin
+        //-         .comment__dots
+        //-             label(for='comment_1')
+        //-             label(for='comment_2')
+        //-             label(for='comment_3')
+        //-             label(for='comment_4')
+        
+        include ./footer.pug
+        //- footer.footer
+        //-     .footer__top
+        //-         .container
+        //-             .row
+        //-                 .footer__about
+        //-                     h6 About Company
+        //-                     p
+        //-                         | Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate
+        //-                         | rem ullam dolore nisi voluptatibus esse quasi.Integer sit amet mattis quam.
+        //-                     .footer__icon
+        //-                         a(href='#')
+        //-                             i.fab.fa-facebook-f
+        //-                         a(href='#')
+        //-                             i.fab.fa-twitter
+        //-                         a(href='#')
+        //-                             i.fab.fa-instagram
+        //-                         a(href='#')
+        //-                             i.fab.fa-linkedin-in
+        //-                 .footer__link
+        //-                     h6 Useful Links
+        //-                     ul
+        //-                         li
+        //-                             a(href='#') Home
+        //-                         li
+        //-                             a(href='#service') Services
+        //-                         li
+        //-                             a(href='#') Blog posts
+        //-                         li
+        //-                             a(href='#contact') Contact us
+        //-                 .footer__services
+        //-                     h6 Services
+        //-                     ul
+        //-                         li
+        //-                             a(href='#') Furniture Chairs
+        //-                         li
+        //-                             a(href='#') Three Seater Sofas
+        //-                         li
+        //-                             a(href='#') Dining Tables
+        //-                         li
+        //-                             a(href='#') Office Chairs
+        //-                         li
+        //-                             a(href='#') Kitchen Cabinets
+        //-                 .footer__contact
+        //-                     h6 Contact Us
+        //-                     ul
+        //-                         li
+        //-                             i.fa.fa-map-marker-alt
+        //-                             span
+        //-                                 | 175 Tay Son, Dong Da, Ha Noi
+        //-                                 | HaNoi
+        //-                     ul
+        //-                         li
+        //-                             i.fa.fa-phone
+        //-                             span +(84)-555-999-9999
+        //-                     ul
+        //-                         li
+        //-                             i.fa.fa-envelope-open
+        //-                             span thiennb01@mail.com
+        //-     .footer__bottom
+        //-         .container
+        //-             p
+        //-                 | &copy; 2023 Web35Pro. All rights reserved. Design by 
+        //-                 a(href='https://www.facebook.com/thienphamcfvn') Pham Thien
+
+                

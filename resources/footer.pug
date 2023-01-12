@@ -1,0 +1,32 @@
+footer.footer
+    .footer__top
+        .container
+            .row
+                .footer__about
+                    h6= footer_title.about.title
+                    p= footer_title.about.desc
+                    .footer__icon
+                        each val in footer_icon
+                            a(href= val.link)
+                                i(class= val.icon)
+                .footer__link
+                    h6= footer_title.link
+                    ul
+                        each val in footer_link
+                            li
+                                a(href= val.link)= val.title
+                .footer__services
+                    h6= footer_title.services
+                    ul
+                        each val in footer_services
+                            li
+                                a(href= val.link)= val.title
+                .footer__contact
+                    h6= footer_title.contact
+                    each val in footer_contact
+                        +footer_contact_item(val.icon,val.content)
+    
+    .footer__bottom
+        .container
+            p © 2023 Web35Pro. All rights reserved. Design by 
+                a(href="https://www.facebook.com/thienphamcfvn") Pham Thien

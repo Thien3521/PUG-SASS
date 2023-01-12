@@ -1,0 +1,87 @@
+//- HEADER
+- var header_logo = "Web35Pro";
+- var header_btn_content = "Get Free Estimate";
+-
+    var nav_menu = [
+        {title: "Home", link: "#"},
+        {title: "About", link: "#about"},
+        {title: "Services", link: "#service"},
+        {title: "Contact", link: "#contact"}
+    ]
+
+//- SLIDER
+-
+    var slider__item = [
+        {title:"Stylish designs", content:"Interiors that reflect your style.",link:"#"},
+        {title:"Home decoration", content:"Interior designs from the future.",link:"#"},
+        {title:"Home decoration", content:"Interior designs from the future.",link:"#"}
+    ]
+
+//- CONTACT
+- var contact_btn_content = "Submit";
+-
+    var contact_title = {
+        big: "Meet Our Designer Online",
+        sub: "Start your home interiors journey online, from the comfort of your home"
+    }
+
+//- FOOTER
+-
+    var footer_title = {
+        about: {title:"About Company",desc:"We look forward to hearing from our customers. Please send all requests, questions according to the information below, we will contact you as soon as possible."},
+        link: "Useful Links",
+        services: "Services",
+        contact: "Contact Us"
+    }
+-
+    var footer_link = [
+        {title:"Home", link: "#"},
+        {title:"Services", link: "#service"},
+        {title:"Blog posts", link: "#"},
+        {title:"Contact us", link: "#contact"}
+    ]
+-
+    var footer_services = [
+        {title:"Furniture Chairs", link: "#"},
+        {title:"Three Seater Sofas", link: "#"},
+        {title:"Dining Tables", link: "#"},
+        {title:"Office Chairs", link: "#"},
+        {title:"Kitchen Cabinets", link: "#"}
+        ]
+
+-
+    var footer_contact = [
+        {icon: "fa fa-map-marker-alt", content: "175 Tay Son, Dong Da, Ha Noi HN"},
+        {icon: "fa fa-phone", content: "+(84)-555-999-9999"},
+        {icon: "fa fa-envelope-open", content: "thiennb01@mail.com"}
+    ]
+
+-
+    var footer_icon = [
+        {link: "#", icon: "fab fa-facebook-f"},
+        {link: "#", icon: "fab fa-twitter"},
+        {link: "#", icon: "fab fa-instagram"},
+        {link: "#", icon: "fab fa-linkedin-in"}
+    ]
+
+mixin title(sub_title, big_title, desc)
+    h6.sub-title= sub_title
+    h3.big-title= big_title
+    if desc != ""
+        p= desc
+
+mixin slider__item(title, content, link)
+    .slider__item
+        .container
+            .slider__text
+                p= title
+                h5= content
+                a(href= link) View Details 
+                    i.fa.fa-long-arrow-alt-right
+                          
+mixin footer_contact_item(iconClass, address)
+    ul
+        li
+            i(class= iconClass)
+            span= address
+

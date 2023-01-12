@@ -1,0 +1,27 @@
+$primary-color: #011627;
+$secondary-color: #ff9f1c;
+$bg-color: #fff;
+
+$heading-color: #151b1d;
+$logo-color: #151b1d;
+
+// background color
+$bg-light:  rgba(147, 107, 232, 0.05);
+
+// border
+$border-radius:  25px;
+$border-radius-1:  8px;
+
+// footer
+$footer-bg:  #011627;
+$footer-light: #011b2f;
+
+//break points
+$breakpoints:(
+    'extra-large':1200px,
+    'small-large': 1035px,
+    'large':992px,
+    'medium':768px,
+    'small':576px,
+)
+

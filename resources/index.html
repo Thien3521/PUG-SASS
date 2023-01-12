@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header__logo">
+            <h1><a>Web35Pro</a></h1>
+          </div>
+          <label class="header__menu" for="navbar_toggler"> <i class="fa fa-bars"> </i></label>
+          <input id="navbar_toggler" type="checkbox">
+          <div class="header__nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="clear-left"></div>
+          </div>
+          <div class="header__btn"><a class="btn btn-primary" href="#">Get Free Estimate</a></div>
+        </div>
+      </div>
+    </header>
+    <!---->
+    <section class="slider">
+      <input type="radio" id="slider_1" name="slider_radio">
+      <input type="radio" id="slider_2" name="slider_radio">
+      <input type="radio" id="slider_3" name="slider_radio">
+      <div class="slider__content">
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider__text">
+              <p>Stylish designs</p>
+              <h5>Interiors that reflect your style.</h5><a href="#">View Details <i class="fa fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider__text">
+              <p>Home decoration</p>
+              <h5>Interior designs from the future.</h5><a href="#">View Details <i class="fa fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="container">
+            <div class="slider__text">
+              <p>Home decoration</p>
+              <h5>Interior designs from the future.</h5><a href="#">View Details <i class="fa fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__nav">
+        <label for="slider_1"></label>
+        <label for="slider_2"></label>
+        <label for="slider_3"></label>
+      </div>
+    </section>
+    <!---->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about__item">
+            <h6 class="sub-title">ABOUT US</h6>
+            <h3 class="big-title">One-Stop Shop For Everything Interiors</h3>
+            <p></p><a href="#">Read More<i class="fa fa-arrow-right"></i></a>
+          </div>
+          <div class="about__item">
+            <div class="row">
+              <div class="about__img"><img src="./css/img/ab.jpg" alt="about image 1"></div>
+              <div class="about__img"><img src="./css/img/ab1.jpg" alt="about image 2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer" id="service">
+      <div class="container">
+        <div class="row">
+          <div class="offer__item"><img src="./css/img/g3.jpg" alt=""></div>
+          <div class="offer__item">
+            <h6 class="sub-title">WHAT WE DO</h6>
+            <h3 class="big-title">What We Offer For You</h3>
+            <p>To be able to choose the perfect beautiful furniture for the family does not seem to be an easy task</p>
+            <ul>
+              <li><i class="fa fa-check"></i>Full home interiors</li>
+              <li><i class="fa fa-check"></i>Modular solutions</li>
+              <li><i class="fa fa-check"></i>Catalogue products</li>
+              <li><i class="fa fa-check"></i>Installation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__content">
+          <div class="row">
+            <h3 class="big-title">Meet Our Designer Online</h3>
+            <h4>Start your home interiors journey online, from the comfort of your home</h4>
+            <form action="#" method="post">
+              <div class="row contact__form">
+                <div class="contact__form-item">
+                  <input type="text" placeholder="Name...">
+                </div>
+                <div class="contact__form-item">
+                  <input type="email" placeholder="Email...">
+                </div>
+                <div class="contact__form-item">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+            <p>By submitting this form, you agree to the <a href="#">privacy policy </a>and <a href="#">terms of use</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comment">
+      <div class="container">
+        <h6 class="sub-title">HERE&rsquo;S WHAT THEY HAVE TO SAY</h6>
+        <h3 class="big-title">Our Clients Do The Talking</h3>
+        <p></p>
+        <input id="comment_1" type="radio" name="comment_radio">
+        <input id="comment_2" type="radio" name="comment_radio">
+        <input id="comment_3" type="radio" name="comment_radio">
+        <input id="comment_4" type="radio" name="comment_radio">
+        <div class="comment__wraper">
+          <div class="comment__item">
+            <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+              <p>
+                I have been married for 5 years, but now I have the opportunity to remodel the family's living room. 
+                At first, I was very confused because I didn't know which party to choose, but my sister at the agency introduced Web35Pro to me. 
+                I really like the enthusiasm of the Web35Pro staff who guided and advised me thoroughly because in fact, both husband and wife are office workers, so they have little experience in this. 
+                Now the family has a very nice and satisfied living room. Thank you Web35Pro.
+              </p>
+            </blockquote>
+            <div class="comment__user"><img src="./css/img/c1.jpg" alt="user1">
+              <h4>Van Khiem</h4>
+            </div>
+          </div>
+          <div class="comment__item">
+            <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+              <p>
+                I am constantly busy with work. When deciding to choose Web35Pro just because I went to the store and saw a suitable display of furniture, I asked for advice. 
+                And from there I decided to choose because the price is also reasonable with the quality of the product.
+              </p>
+            </blockquote>
+            <div class="comment__user"><img src="./css/img/c2.jpg" alt="user2">
+              <h4>Thai Ha</h4>
+            </div>
+          </div>
+          <div class="comment__item">
+            <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+              <p>
+                Meeting Web35Pro at the handover ceremony, was convinced by the explanation to help homeowners understand why the table is so expensive? 
+                Why is this material higher than the other? And that's why I choose Web35Pro to design and build houses.
+              </p>
+            </blockquote>
+            <div class="comment__user"><img src="./css/img/c3.jpg" alt="user3">
+              <h4>Viet Duc</h4>
+            </div>
+          </div>
+          <div class="comment__item">
+            <blockquote class="comment__content"><i class="fa fa-quote-left"></i>
+              <p>
+                His nephew introduced me to Web35Pro. Very satisfied with the advice of Mr. Thien. Building a house not only looks at the present but also looks to the future. 
+                Not only a place to stay, but also a place to enjoy. Thanks Web35Pro. I like it very much.
+              </p>
+            </blockquote>
+            <div class="comment__user"><img src="./css/img/c4.jpg" alt="user4">
+              <h4>Ngoc Huong</h4>
+            </div>
+          </div>
+        </div>
+        <div class="comment__dots">
+          <label for="comment_1"></label>
+          <label for="comment_2"></label>
+          <label for="comment_3"></label>
+          <label for="comment_4"></label>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="footer__about">
+              <h6>About Company</h6>
+              <p>We look forward to hearing from our customers. Please send all requests, questions according to the information below, we will contact you as soon as possible.</p>
+              <div class="footer__icon"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="footer__link">
+              <h6>Useful Links</h6>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#">Blog posts</a></li>
+                <li><a href="#contact">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="footer__services">
+              <h6>Services</h6>
+              <ul>
+                <li><a href="#">Furniture Chairs</a></li>
+                <li><a href="#">Three Seater Sofas</a></li>
+                <li><a href="#">Dining Tables</a></li>
+                <li><a href="#">Office Chairs</a></li>
+                <li><a href="#">Kitchen Cabinets</a></li>
+              </ul>
+            </div>
+            <div class="footer__contact">
+              <h6>Contact Us</h6>
+              <ul>
+                <li><i class="fa fa-map-marker-alt"></i><span>175 Tay Son, Dong Da, Ha Noi HN</span></li>
+              </ul>
+              <ul>
+                <li><i class="fa fa-phone"></i><span>+(84)-555-999-9999</span></li>
+              </ul>
+              <ul>
+                <li><i class="fa fa-envelope-open"></i><span>thiennb01@mail.com</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p>© 2023 Web35Pro. All rights reserved. Design by <a href="https://www.facebook.com/thienphamcfvn">Pham Thien</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+.comment {
+    padding: 9.6rem 0;
+    text-align: center;
+    overflow: hidden;
+    input {
+        display: none;
+    }
+    &__wraper {
+        display: flex;
+        @include transform(translateX(-100%));
+        transition: all .3s;
+    }
+    #comment_1:checked ~ .comment__wraper {
+        @include transform(translateX(0%));
+    }
+    #comment_2:checked ~ .comment__wraper {
+        @include transform(translateX(-100%));
+    }
+    #comment_3:checked ~ .comment__wraper {
+        @include transform(translateX(-200%));
+    }
+    #comment_4:checked ~ .comment__wraper {
+        @include transform(translateX(-300%));
+    }
+    &__item {
+        margin: 4.8rem 0 2.7rem;
+        display: block;
+        min-width: 100%;
+    }
+    &__content {
+        width: 60%;
+        margin: 0 auto;
+        p {
+            margin: 1.5rem;
+        }
+        i {
+            @include text($secondary-color, 5rem, .8);
+            margin-bottom: 1rem;
+        }
+    }
+    &__user {
+        img {
+            @include size(9rem);
+            @include border-radius(50%);
+            margin-bottom: 2.7rem;
+        }
+        h4 {
+            @include text($heading-color, 1.8rem, false, 500);
+        }
+    }
+    &__dots {
+        label {
+            display: inline-block;
+            @include size(1rem);
+            @include border-radius(50%);
+            background-color: #949494;
+            margin: 0 .8rem;
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+    }
+    @include responsive('medium'){
+        padding: 4.8rem 0;
+        &__item {
+            margin: 3rem 0 2rem;
+        }
+    }
+}
